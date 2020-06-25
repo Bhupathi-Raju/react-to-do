@@ -1,38 +1,71 @@
+body{
+  background-color: rgb(199, 168, 111);
+}
+
 .App {
-  text-align: center;
+  /* background-color: rgb(8, 9, 15); */
+  background-color: thistle;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#new-task-form input{
+  background-color: maroon;
+  border:0;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#new-task-form input::placeholder{
+  color: darkgrey;
 }
 
-.App-header {
+#new-task-form input:focus{
+  outline: none;
+}
+
+#new-task-form button{
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  border: 0;
+  background-color:goldenrod;
+  cursor: pointer;
+  font-weight: bolder;
+  color: blue;
+}
+
+#new-task-form button:focus{
+  outline: none;
+}
+
+
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
+  line-height: 3;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: top; */
+  /* padding-top: 50px; */
+  /* font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.App-new{
+  color:white;
 }

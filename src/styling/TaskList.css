@@ -1,0 +1,52 @@
+.task{
+    color: rgb(221, 181, 181);
+    width: 300px;
+    background-color: rgb(10, 3, 3);
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-shadow: green;
+    z-index: 100;
+}
+
+.task p{
+    padding: 14px;
+    position: relative;
+    text-shadow: honeydew;
+}
+
+#delete{
+    color: white;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    margin:  0 5px;
+    font-size: 15px;
+}
+
+#delete:hover{
+    color: red;
+    font-size: 18px;
+}
+
+#checkbox{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 40px;
+    padding: 3px;
+}
+
+#checkbox:checked::before{
+    fill: red;
+}
+
+.task p input{
+    background-color: transparent;
+    border: 0;
+    color: tomato;
+}
+
+.task p input:focus{
+    outline: none;
+}
